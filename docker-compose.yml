@@ -1,9 +1,9 @@
-version: "3.8"
+version: '3.8'
 
 services:
-  web:
+  vite-app:
     build: .
     ports:
       - "80:80"
-    container_name: react_vite_app
-    restart: always
+    container_name: vite-app
+    restart: unless-stopped
